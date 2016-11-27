@@ -1,16 +1,412 @@
-<!doctype html>
+<!Doctype html>
 <html lang="es">
 
-	<head>
-	<title>trabajo LM</title>
+<head>
+	<title>trabajo LM ANTON</title>
 	<meta charset="utf-8">
-	</head>
-	<h1>Tutorial de HTML</h1>
+</head>
 	
-	<body>
+<body>
+    
+    <h1>Tutorial de HTML</h1>	
+	<h2>¿Ques es el HTML?</h2>	
+    <br>
+    <p>El HTML (HyperText Markup Language)es el lenguaje con el que se escriben las páginas web. Es un 
+     lenguaje que permite escribir texto de forma estructurada, y que 
+	está compuesto por etiquetas, que marcan el inicio y el fin de cada elemento del documento.
+	<br>
+
+	Los documentos HTML deben tener la extensión html o htm, para que puedan ser visualizados en los 
+	navegadores.
+
+	Los navegadores se encargan de interpretar el código HTML de los documentos, y de mostrar a el 
+	usuario la página web resultantes del código.</p>
+    
+    <h2>Estructura básica de HTML</h2><br>
+    <p>El modelo básico se HTML se compone de :
+        <br>
+        <b>&lt;!Doctype&gt;</b> Esta etiqueta declara que tipo de documento vamos a crear, siempre sera la primera etiqueta de nuestro documento.
+        <br>
+        <b>&lt;html&gt;</b>Esta etiqueta declara que a partir de aqui todo lo que escribamos sera HTML.
+        <br>
+        <b>&lt;head&gt;</b>Esta etiqueta crea una zona en nuestro documento llamada cabecera.
+        <br>
+        <b>&lt;title&gt;</b>Esta etiqueta se usa para poner un titulo a nuestra página web. Por ejemplo:
+        <br>
+        &lt;title&gt; Este es el título de mi web &lt;\title&gt;
+        <br>
+        <b>&lt;\head&gt; Ahora cerrariamos la etiqueta HEAD 
+        <br>
+        <b>&lt;body&gt;</b> Esta etiqueta abre la parte cuerpo de nuestra web en la que escribiremos todo el contenido.
+        <br>
+        <b>&lt;\body&gt;</b> Esta etiqueta cierra la etiqueta BODY.
+        <br>
+        <b>&lt;\html&gt;</b> Esta etiqueta cierra la etiqueta HTML abierta anteriormente.
+    </p>
+    
+    <h2>Títulos</h2>
+    <p><table border="3"  >
+			<tr>
+			    <td><b>&lt;h1&gt;</td>
+				<td><h1>Texto de título de primer nivel</h1></td>
+				<td>&lt;h1&gt;Texto de título de primer nivel&lt;/h1&gt;</td>
+			</tr>
+			</tr>
+			<td><b>&lt;h2&gt;</td>
+			<td><h2>Texto de título de segundo nivel</h2></td>
+			<td>&lt;h2&gt;Texto de título de segundo nivel&lt;/h2&gt;</td>
+			</tr>
+			<tr>
+			<td><b>&lt;h3&gt;</td>
+			<td><h3>Texto de título de tercer nivel</h3></td>
+			<td>&lt;h3&gt;Texto de título de tercer nivel&lt;/h3&gt;</td>
+			</tr>
+			<td><b>&lt;h4&gt;</td>
+			<td><h4>Texto de título de cuarto nivel</h4></td>
+			<td>&lt;h4&gt;Texto de título de cuarto nivel&lt;/h4&gt;</td>
+			</tr>
+			<td><b>&lt;h5&gt;</td>
+			<td><h5>Texto de título de quinto nivel</h5></td>
+			<td>&lt;h5&gt;Texto de título de quinto nivel&lt;/h5&gt;</td>
+			</tr>
+			<td><b>&lt;h6&gt;</td>
+			<td><h6>Texto de título de sexto nivel</h6></td>
+			<td>&lt;h6&gt;Texto de título de sexto nivel&lt;/h6&gt;</td>
+		</table>
+	</p>
+	    <br>
+    <p>     <h2><b>Texto preformateado</b> </h2>             
+                <pre> &lt;pre&gt;
+                        Este texto aparecerá
+                                escrito en el navegador con este mismo formato
+                                        utilizando un tipo de letra monoespaciada
+                    &lt;/pre&gt;</pre></p>
+	</p>
+	<p>
+	    <br>
+	        <h2><b>Listas</b></h2>
+	        
+    <p>     Hay varios tipos de listas :
+    </p>
+        <table border="3">
+			<tr>
+				<td>Listas Desordenadas &lt;ul&gt;</td>
+				<td>
+					<ul>
+						<li>Harina </li>
+						<li>Huevo </li>
+					</ul>
+				</td>
+				<td>
+					&lt;ul&gt;<br>
+						&lt;li&gt;Harina&lt;/li&gt;
+				<br>
+						&lt;li&gt;Huevo&lt;/li&gt;
+				<br>
+					&lt;/ul&gt;<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Listas por numeros &lt;ol&gt;</td>
+				<td>
+					<ol>
+						<li>Harina</li>
+						<li>Huevo</li>
+					</ol>
+				</td>
+				<td>
+					&lt;ol&gt;<br>
+						&lt;li&gt;;Harina&lt;/li&gt;
+				<br>
+						&lt;li&gt;Huevo&lt;/li&gt;
+				<br>
+					&lt;/ol&gt;<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Listas Definidas &lt;dl&gt;</td>
+				<td>
+					<dl>
+						<dt>Harina</dt>
+				<dd>molienda de cereales</dd>
+				</td>
+					</dl>
+				</td>
+				<td>
+					    &lt;dl&gt;
+				<br>
+						&lt;dt&gt;Define un termino&lt;/li&gt;
+				<br>
+						&lt;dd&gt;Describe un termino&lt;/dd&gt;
+				<br>
+					    &lt;/dl&gt;
+			</tr>
+			<tr>
+			    <td> Listas por letras  &lt;ol&gt;</td>
+			    <td><ol type="a"> 
+                    <li>Harina
+                    <li>Huevo 
+                    </ol>
+                </td>
+                <td>	&lt;ol type="a"&gt;//&lt;ol type="A"&gt;(MAYUSCULAS)
+                <br>
+						&lt;li&gt;;Harina&lt;/li&gt;
+				<br>
+						&lt;li&gt;Huevo&lt;/li&gt;
+				<br>
+				        &lt;\ol&gt;<br>
+				</td>
+                    
+				
+			</tr>
+			<tr>
+			    <td>Listas por numeros romanos  &lt;ol&gt;</td>
+			    <td><ol type="i"> 
+                    <li>Harina</li>
+                    <li>Huevo</li>
+                    </ol>
+                </td>
+                <td>&lt;ol type="i"&gt;//&lt;ol type="I"&gt;
+                <br>
+                    &lt;li&gt;Harina&lt;\li&gt;
+                <br>
+                    &lt;li&gt;Huevo&lt;\li&gt; 
+                <br>
+                    &lt;\ol&gt;<br>
+                </td>
+			</tr>
+		</table>
+		<br>
+		<p1>
+					Las listas ordenadas disponen de una serie de atributos:
+				</p1>
+				<ul>
+					<li><strong>reversed=""</strong>: Invierte la numeración.
+					</li>
+					<li><strong>type=""</strong>: Sirve para seleccionar el carácter que queremos usar para numerar la lista.
+					</li>
+					<li><strong>value=""</strong>: Asigna el numero en que comenzara la lista.
+					</li>
+				</ul>
+	</p>
+   <p>
+       <h2>Creacción de tablas</h2>
+			Las tablas se crean con la etiqueta <b>&lt;table&gt;&lt;/table&gt;</b>. Dentro de la etiqueta usamos las siguientes etiquetas:
+				
+				<ul>
+					<li>&lt;tr&gt;&lt;/tr&gt;:Para crear una nueva fila a la que añadiremos columnas.
+					</li>
+					<li>&lt;td&gt;&lt;/td&gt;:Para crear las columnas que necesitemos dentro de una fila.
+					</li>
+					<li>&lt;th&gt;&lt;/th&gt;:Para crear la columna de encabezado.
+					</li>
+				<br>
+						<li>rowspan="" : Es un atributo de <b>&lt;th&gt;</b> y <b>&lt;td&gt;</b>, ocupa el número de columnas hacia la derecha que se especifique.
+						</li>
+						<li>colspan="" : Es un atributo de <b>&lt;th&gt;</b> y <b>&lt;td&gt;</b>, ocupa el número de filas hacia abajo que se especifique.
+						</li>
+				</ul>
+				
+					Además <b>&lt;table&gt;&lt;/table&gt;</b> tiene el atributo <b>border=""</b> para añadir el tamaño del borde de la tabla. <br> A continuación vamos a ver un ejemplo sencillo de un horario de trabajo:
+			
+				<pre>&lt;table border="2"&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Ingredientes&lt;/th&gt;
+			&lt;th&gt;Gramos&lt;/th&gt;
+			&lt;th&gt;Litros&lt;/th&gt;
+		&lt;/tr&gt;
 		
-		kkkk
+		&lt;tr&gt;
+			&lt;th>Agua&lt;/th&gt;
+			&lt;td&gt;    &lt;/td&gt;
+			&lt;td&gt; 0,75 L &lt;/td&gt;
+		&lt;/tr&gt;
+		
+		&lt;tr&gt;
+			&lt;th &gt;Arroz&lt;/th&gt;
+			&lt;td &gt; 200 gr &lt;/td&gt;
+			&lt;td&gt;       &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Pimientos&lt;/th&gt;
+			&lt;td&gt; 400 gr &lt;/td&gt;
+			&lt;td&gt;       &lt;/td&gt;
+		&lt;/tr&gt;
+&lt;/table&gt;
+				<p>Este ejemplo se muestra de la siguiente forma en nuestro navegador:</p>
+				<table border="2">
+						<tr>
+							<th>Ingradientes</th>
+							<th>Gramos</th>
+							<th>litros</th>
+						</tr>
+						<tr>
+							<th>Agua</th>
+							<td></td>
+							<td>0,75 L</td>
+						</tr>
+						<tr>
+							<th>Arroz</th>
+							<td>200 gr</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Pimientos</th>
+							<td>400 gr</td>
+							<td></td>
+						
+						</tr>
+				</table>
+       
+   </p>
+    <p>
+        <h2>Cómo poner una línea horizontal en tu Web</h2>
+        <br>
+        <p1>Es muy fácil,tan solo tenemos que poner &lt;hr&gt; cuando la queramos poner.Un ejemplo sería:
+        </p1> 
+       <br><br>
+        <p2>La siguiente línea horizontal divide temáticamente este párrafo del siguiente
+        </p2>
 
+        <hr>
 
-	</body>
+        <p3>Este segundo párrafo puede pertenecer, por ejemplo, a un cambio de escena dentro de un mismo capítulo de una novela.
+        </p3>
+        
+        <br><br>
+        
+            <table border="5">
+                    <td> Texto 1  introducido
+                    <br>
+                        &lt;hr&gt; (linea horizontal)
+                    <br>
+                        Texto 2 introducido
+                       </td>
+            </table>
+     </p>
+     <p>
+            <h2>Resaltado</h2>
+         <br>
+         
+        <table border="3">
+                    <tr>
+                        <td>Itálica ó Bastardilla</td>
+                        <td>Este párrafo contiene una palabra en cursiva la
+                            escribimos con el símbolo de <i>itálica</i>
+                        </td>
+                        <td>Ejemplo : Este párrafo contiene una palabra en cursiva la
+                            escribimos con el símbolo de &lt;i&gt;itálica&lt;\i&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Negrita </td>
+                        <td>
+                            En este, sin embargo, hay una palabra
+                            que aparece en <b>negrita</b>
+                        </td>
+                        <td>Ejemplo : En este, sin embargo, hay una palabra
+                            que aparece en &lt;b&gt;negrita &lt;\b&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subrayada</td>
+                        <td>
+                            En este texto la palabra <u>subrayada</u> es la que
+                            podemos ver en este párrafo .
+                        </td>
+                        <td>
+                             En este texto la palabra &lt;u&gt;subrayada&lt;\u&gt; es la que
+                            podemos ver en este párrafo .
+                        </td>
+                    </tr>
+        </table>
+     </p>
+     <p>
+         <h2>Cómo hacer un salto de línea en el texto de tu web</h2>
+             Es muy fácil tan solo tienes que poner &lt;br&gt;y el texto saltara a la siguiente línea. Un ejmplo sería :
+         <br>
+         <table border="1">
+                <tr><td>Este párrafo continene un <br>
+                        salto de línea</td>
+                        <td>Este párrafo continene un &lt;br&gt;<br>
+                        salto de línea</td>
+                </tr>      
+        </table>
+     </p>
+    <p>
+       <h2>El Hiperenlace</h2> 
+       Marca un lugar en el que podría haber un enlace si fuera relevante.
+       <br>
+       Su ejecución sería:
+       <br>
+       Este texto contiene un enlace a la página de &lt;a
+        href=“http://www.google.com”>Google&lt;/a&gt; , la empresa de la gran G.
+       <br>
+       Y aparecería como :
+       <br>
+       Este texto contiene un enlace a la página de <a href=“http://www.google.com”>Google</a> , la empresa de la gran G.
+    </p>
+    <p><h2>Imágenes</h2>
+        <hr>
+        <p>
+			Para añadir una imagen a nuestra página web, debemos usar la etiqueta <b>&lt;img&gt;</b>. También debemos usar ciertos atributos:
+				</p>
+				<ul>
+					<li><strong>src=""</strong>: Lugar en el que se encuentra la imagen que queremos mostrar.
+					</li>
+					<li><strong>width=""</strong>: Anchura de la imagen (Pixeles).
+					</li>
+					<li><strong>height=""</strong>: Altura de la imagen (Pixeles).
+					</li>
+					<li><strong>alt=""</strong>: Comentario descriptivo de la imagen.
+					</li>
+				</ul>
+				
+					Por ejemplo:
+				<br>
+				&lt;img src="lacasablanca.jpg" width="500" height="400" alt="La casa blanca"&gt;
+				<br>
+					En el navegador se mostrará esto:
+				
+				<img src="lacasablanca.jpg" width="500" height="400" alt="La casa blanca">
+				<br>
+    </p>
+    <p>
+        <h2>Mapas de imagen</h2>
+        
+		Se pueden delimitar zonas de una imagen para que te lleven a un enlace. Para ello se usa la etiqueta <b>&lt;map&gt;&lt;/map&gt;</b> y la etiqueta <b>&lt;area&gt;</b> para definir cada zona de la imagen. Además son necesarios los atributos que se mencionan a continuación:
+				
+				<ul>
+					<li><strong>shape=""</strong>: Es el tipo de área que queremos crear (default, rect, circle, poly).
+					</li>
+					<li><strong>coords=""</strong>: Son las coordenadas para el tamaño del área.
+					</li>
+					<li><strong>href=""</strong>: Determina la dirección a la que hacemos referencia con la zona.
+					</li>
+					<li><strong>alt=""</strong>: Comentario descriptivo de la zona (Obligatorio si usamos "href").
+					</li>
+					<li><strong>download</strong>: Descarga el fichero del enlace.
+					</li>
+					<li><strong>tarjet=""</strong>: Permite elegir como abrir el enlace.
+					</li>
+				</ul>
+				
+					Por ejemplo, vamos a crear una zona en la parte superior derecha  de la foto <a href="http://www.heraldo.es/">http://www.heraldo.es/</a>:
+					<br>
+				    &lt;img src="lacasablanca.jpg" alt="La casa blanca" usemap="#heraldo"&gt;
+				    &lt;map name="Heraldo"&gt;
+					&lt;area shape="circle" coords="325,325,35" href="http://www.heraldo.es/" alt="el heraldo"&gt;
+				    &lt;/map&gt;
+				    <br>
+				<p1>
+					Ahora veamos cómo se muestra el ejemplo anterior en el navegador:
+				</p1>
+				<br>
+				<img src="lacasablanca.jpg" alt="La casa blanca" usemap="#heraldo">
+				<map name="heraldo">
+					<area shape="circle" coords="336,45,33 href="http://www.heraldo.es/" alt="Pagina de el heraldo">
+				</map>
+				<br>
+    </p>
+</body>
 </html>
